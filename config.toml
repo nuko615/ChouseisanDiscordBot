@@ -1,0 +1,25 @@
+timezone = "Asia/Tokyo"
+week_label_anchor = "sunday"
+deadline_days_before = 2
+deadline_template = "{month}/{day}({weekday})の午前までに入力お願いします。"
+discord_template = """
+{mention}
+{message}
+
+{deadline}
+{url}
+"""
+chouseisan_base_url = "https://chouseisan.com"
+
+[[events]]
+id = "main"
+title_template = "{month}月第{week}週"
+role_id_env = "DISCORD_ROLE_ID"
+discord_message = "参加可能な日を入力してください。"
+memo = """
+参加できる日を選択してください。
+
+〇：参加可能
+△：調整可能
+×：参加不可
+"""
