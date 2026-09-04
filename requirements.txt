@@ -1,0 +1,4 @@
+python-dotenv>=1.0,<2
+requests>=2.32,<3
+selenium>=4.27,<5
+tzdata>=2025.2
